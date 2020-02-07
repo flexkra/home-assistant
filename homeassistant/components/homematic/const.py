@@ -27,6 +27,7 @@ ATTR_PARAMSET = "paramset"
 ATTR_DISCOVERY_TYPE = "discovery_type"
 ATTR_LOW_BAT = "LOW_BAT"
 ATTR_LOWBAT = "LOWBAT"
+ATTR_LED_STATE = "LED_STATE"
 
 EVENT_KEYPRESS = "homematic.keypress"
 EVENT_IMPULSE = "homematic.impulse"
@@ -55,6 +56,7 @@ HM_DEVICE_TYPES = {
         "IPKeySwitch",
         "IPKeySwitchLevel",
         "IPMultiIO",
+        "LedDevice",
     ],
     DISCOVER_LIGHTS: [
         "Dimmer",
@@ -183,6 +185,7 @@ HM_ATTRIBUTE_SUPPORT = {
     "OPERATING_VOLTAGE": ["voltage", {}],
     "WORKING": ["working", {0: "No", 1: "Yes"}],
     "STATE_UNCERTAIN": ["state_uncertain", {}],
+    "LED_STATUS": ["ledstatus", {0: "off", 1: "red", 2: "green", 3: "orange"}],
 }
 
 HM_PRESS_EVENTS = [
